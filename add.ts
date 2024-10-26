@@ -1,11 +1,15 @@
-function sum(a: number, b: number): number {
+function add(a: number, b: number): number {
   return a + b;
 }
 
-console.log(sum(1, 2));
-// testSum(1, "2");
-// sum('asdf', 'asdf');
-// sum(null, null);
-// sum(undefined, undefined);
-// sum(null, undefined);
-// sum({}, []);
+console.log(add(1, 2));
+
+// Errors:
+// console.log(add(1, "2")); // error!
+// console.log(add("asdf", "asdf")); // error!
+// console.log(add({}, [])); // error!
+
+// Strict mode errors:
+// console.log(add(null, null)); // error!
+// console.log(add(undefined, undefined)); // error!
+// console.log(add(null, undefined)); // error!
