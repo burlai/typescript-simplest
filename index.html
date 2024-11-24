@@ -19,13 +19,42 @@
             margin: 0;
             padding: 20px 0;
         }
+
+        .book-list {
+            text-align: left;
+            margin-left: 24px;
+        }
+
+        li {
+            width: 100px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>TypeScript українською</h1>
-    <h2>Classes</h2>
-    <script src="classes.js"></script>
+    <h1>Books List</h1>
+
+    <div>
+        <h3>Add a Book</h3>
+        <input type="text" id="title" placeholder="Enter book title" />
+        <input type="text" id="author" placeholder="Enter author name" />
+        <button id="addBook">Add Book</button>
+    </div>
+
+    <div>
+        <h3>Delete a Book</h3>
+        <input type="text" id="deleteTitle" placeholder="Enter book title to delete" />
+        <button id="deleteBook">Delete Book</button>
+    </div>
+
+    <div>
+        <h3 class="book-list">Book List</h3>
+        <ol id="bookList">
+            <!-- Book list will be displayed here -->
+        </ol>
+    </div>
+
+    <script type="module" src="index.js"></script>
 </body>
 
 </html>
